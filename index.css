@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav > ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.item {
+  margin: 0 2rem;
+}
+
+.submenu {
+  position: absolute;
+  left: 0;
+  padding: 0;
+  list-style: none;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.item:hover .submenu {
+  padding: 0.5rem 0;
+  width: 9rem;
+  height: auto;
+  background-color: #222;
+  color: #eee;
+  clip: auto;
+}
+
+.item:hover .submenu,
+.item.focus .submenu {
+  padding: 0.5rem 0;
+  width: 9rem;
+  height: auto;
+  background-color: #222;
+  color: #eee;
+  clip: auto;
+}
+
+.submenu a {
+    color: #eee;
+}
